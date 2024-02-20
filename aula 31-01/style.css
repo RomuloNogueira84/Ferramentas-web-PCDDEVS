@@ -1,0 +1,19 @@
+/* uso singular */
+h1 {
+  color: rgb(244, 154, 154);
+  border: 5px solid white;
+  background-color: black;
+}
+
+
+#titulo1{ 
+  color: rgb(99, 99, 241);
+  border: 5px solid goldenrod;
+  background-color:black;
+}
+
+#titulo2{
+  color: rgb(128, 244, 128);
+  border: 5px solid gold;
+  background-color: black;
+}

@@ -1,0 +1,82 @@
+
+
+body {
+  background-color: black;
+  color: lightgoldenrodyellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; 
+  border: 2px solid lightgoldenrodyellow;
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid ;
+  box-shadow: 0 0 10px ;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-variation-settings: "wght" 900, "slnt" -10; 
+  font-size: 40px;
+  color: red;
+  animation: pulse 2s infinite;  
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+h2 {
+  font-variation-settings: "wght" 700, "slnt" -5; 
+  font-size: 20px;
+  color: lightgoldenrodyellow;
+}
+
+
+p {
+  font-variation-settings: "wght" 400; 
+  line-height: 1.5;
+}
+
+
+strong {
+  font-variation-settings: "wght" 600; 
+}
+
+figure {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border: 2px solid ;
+  transition: transform 0.3s; 
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}

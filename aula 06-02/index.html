@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos 06-02</title>
+  <style>
+    body {
+      background-image: url(https://blog-static.infra.grancursosonline.com.br/wp-content/uploads/2016/03/03190707/For%C3%A7as-Armadas.png)
+    }
+    form,
+    p {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color:black;
+    }
+    form {
+      border: 5px solid black;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+    }
+    button {
+      background-color: #8a9e71;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3c4d2c;
+    }
+    header {
+      background-color: #4d4d4d;
+      border-bottom: 5px solid #333333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-family:  sans-serif;
+      font-size: 36px;
+      text-align: center;
+    }
+
+    #insignia {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ALISTAMENTO BRASILEIRO 2024</h1>
+    <img id="insignia" src="https://descanso.sc.gov.br/uploads/sites/330/2023/06/2927384.jpg"
+      alt="Insígnia do Exército Brasileiro">
+  </header>
+  <br>
+
+  <form id="formItem">
+
+    <label>Digite a sua idade: </label>
+    <input type="number" id="idade" />
+    <br>
+    <br>
+    <label>Digite a sua altura: </label>
+    <input type="number" id="altura" />
+    <br>
+    <br>
+    <button onclick="calcular()" type="button" id="CalcularButton">Calcular</button>
+    <button onclick="limparCampos()" type="button">Limpar</button>
+
+  </form>
+
+  <p id="resultado"></p>
+
+  <script>
+        alert("Seja bem vindo jovem vamos saber se estamos adequados ao serviço militar.");
+        prompt(" Qual o seu nome: ");
+
+        function calcular() {
+            var idade = document.getElementById('idade').value;
+            var altura = document.getElementById('altura').value;
+
+            if(idade>=18 && altura >= 1.75) {
+                document.getElementById('resultado').innerHTML = ' Você é considerado Alistado';
+            } else {
+                document.getElementById('resultado').innerHTML = ' Você não é considerado Alistado';
+            }
+        }
+
+        function limparCampos() {
+            document.getElementById('idade').value = '';
+            document.getElementById('altura').value = '';
+            document.getElementById('resultado').innerHTML = '';
+        }
+    </script>
+
+
+    }
+  </script>
+</body>
+
+</html>
